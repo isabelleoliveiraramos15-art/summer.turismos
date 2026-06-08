@@ -12,88 +12,197 @@
 
     <!-- MENU -->
     <header>
+
         <nav class="menu">
 
-            <div class="logo">
+            <div class="logo"
+                onclick="mostrarTela('home')">
+
                 <span class="sol">☀</span>
                 <h1>SUMMER TURISMO</h1>
+
             </div>
+
+            <ul>
+
+                <li>
+                    <a href="#"
+                    onclick="mostrarTela('sobre')">
+                        sobre nós
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                    onclick="mostrarTela('contato')">
+                        contato
+                    </a>
+                </li>
+
+            </ul>
 
         </nav>
+
     </header>
 
-    <main class="container">
+    <main>
 
-        <h1 class="titulo">
-            — PROMOÇÃO SUMMER TURISMO <br>
-            VOCÊ NÃO PODE PERDER! —
-        </h1>
+        <!-- HOME -->
+        <section id="home"
+        class="tela ativa">
 
-        <div class="pacote">
-            Pacote de viagem
-        </div>
+            <div class="container-home">
 
-        <div class="info">
-            Duração: uma semana
-        </div>
+                <div class="lado-esquerdo">
 
-        <div class="info">
-            Hotel: incluso
-        </div>
+                    <div class="caixa-principal">
 
-        <div class="info">
-            Café da manhã: incluso, exceto final de semana
-        </div>
+                        <h2>
+                            — VIAGE PARA OS <br>
+                            MELHORES DESTINOS! —
+                        </h2>
 
-        <div class="info">
-            Saída: Contagem-MG
-        </div>
+                        <p>
+                            Pacotes completos,
+                            segurança e conforto
+                            para você aproveitar
+                            cada momento.
+                        </p>
 
-        <div class="preco">
-            VALOR:
-            <span class="antigo">
-                de R$ 2.500,00
-            </span>
-            por:
-            <span class="novo">
-                R$ 1.500,00
-            </span>
-        </div>
+                    </div>
 
-        <h2 class="destino-titulo">
-            — DESTINO —
-        </h2>
+                    <div class="caixa-menor">
 
-        <div class="destino">
+                        <h3>
+                            BEM-VINDO À
+                            SUMMER TURISMO!
+                        </h3>
 
-            <img src="praia.jpeg" alt="Praia">
+                        <p>
+                            Aqui você encontra
+                            os melhores pacotes
+                            de viagens para curtir
+                            momentos inesquecíveis
+                            com quem você ama.
+                        </p>
 
-            <div class="destino-info">
+                    </div>
 
-                <div class="titulo-praia">
-                    Praia do Julião-SP
                 </div>
 
-                <ul>
-                    <li>
-                        Nossas viagens são realizadas de 3 em 3 meses
-                    </li>
+                <div class="lado-direito">
 
-                    <li>
-                        Máximo de 30 pessoas por ônibus
-                        (em caso de lotação enviar um e-mail em nosso site)
-                    </li>
+                    <img src="praia.jpeg"
+                    alt="Praia">
 
-                    <li>
-                        Pagamento via site 
-                    </li>
-                </ul>
+                </div>
 
             </div>
 
-        </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre"
+        class="tela">
+
+            <div class="container-sobre">
+
+                <img src="familia.jpeg"
+                alt="Família">
+
+                <div class="texto-sobre">
+
+                    <h2>
+                        — QUEM SOMOS —
+                    </h2>
+
+                    <p>
+                        A Summer Turismo é uma empresa
+                        de família que nasceu do sonho
+                        de proporcionar experiências
+                        inesquecíveis e acessíveis
+                        para todos que amam viajar.
+                    </p>
+
+                    <p>
+                        Trabalhamos com dedicação
+                        para oferecer conforto,
+                        segurança e o melhor
+                        custo-benefício.
+                    </p>
+
+                    <p>
+                        Nosso compromisso é levar
+                        você aos melhores destinos
+                        e criar lembranças que
+                        ficam para sempre!
+                    </p>
+
+                    <button>
+                        VENHA FAZER PARTE
+                        DA NOSSA FAMÍLIA!
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato"
+        class="tela">
+
+            <div class="container-contato">
+
+                <div class="formulario">
+
+                    <h2>
+                        — ENTRE EM CONTATO —
+                    </h2>
+
+                    <label>Nome:</label>
+                    <input type="text">
+
+                    <label>E-mail:</label>
+                    <input type="email">
+
+                    <label>Telefone:</label>
+
+                   <input 
+                   type="text"
+                   placeholder="(00) 00000-0000">
+
+                    <label>Mensagem:</label>
+
+                    <textarea></textarea>
+
+                    <button>
+                        ENVIAR
+                    </button>
+
+                </div>
+
+                <div class="perfil">
+
+                    <img src="contato.jpeg"
+                    alt="Usuário">
+
+                    <p>
+                        Contato do proprietário:
+                        <br>
+                        (99) 99999-9999
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
