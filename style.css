@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9edf3;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU */
+.menu {
+    background: #004db8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sol {
+    font-size: 35px;
+    color: gold;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 35px;
+}
+
+/* CONTEÚDO */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #dfe7f3;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+    color: #004db8;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.pacote {
+    background: #004db8;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.preco {
+    text-align: center;
+    font-size: 35px;
+    margin: 40px 0;
+    font-weight: bold;
+}
+
+.antigo {
+    color: red;
+    text-decoration: line-through;
+}
+
+.novo {
+    color: green;
+}
+
+.destino-titulo {
+    text-align: center;
+    color: #004db8;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.destino {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+}
+
+.destino img {
+    width: 45%;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.destino-info {
+    width: 55%;
+    background: #dfe7f3;
+}
+
+.titulo-praia {
+    background: #004db8;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 20px 0 0;
+}
+
+.destino-info ul {
+    padding: 30px;
+    font-size: 28px;
+}
+
+.destino-info li {
+    margin-bottom: 25px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 900px) {
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .pacote {
+        font-size: 25px;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    .preco {
+        font-size: 25px;
+    }
+
+    .destino {
+        flex-direction: column;
+    }
+
+    .destino img,
+    .destino-info {
+        width: 100%;
+    }
+
+    .destino img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .titulo-praia {
+        border-radius: 0;
+    }
+}
